@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+body {
+    
+    background: url(images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+main {
+    padding: 100px 20px;
+}
+.hero-text {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+.hero-text h1 {
+    font-size: 2rem;
+}
+.hero-text p {
+    font-size: 16px;
+    padding: 20px 0;
+    line-height: 2;
+}
+.free-trial {
+    margin-top: 80px;
+}
+.offer {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.204);
+    max-width: 500px;
+    margin: auto;
+}
+.offer p{
+    font-weight: 700;
+}
+.offer span {
+    font-weight: 400;
+}
+form {
+    background-color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    box-shadow: 0px 15px 2px rgba(0, 0, 0, 0.204);
+    max-width: 560px;
+    margin:50px auto 0;
+}
+.form-control {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-control input {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    outline: none; 
+    width: 100%;
+} 
+form input::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+}
+.form-control svg {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    visibility: hidden;
+}
+.form-control small {
+    color: hsl(0, 100%, 74%);
+    display: block;
+    text-align: right;
+    display: none;
+}
+.form-control.error input {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+.form-control.error svg {
+    visibility: visible;
+}
+.form-control.error small {
+    display: block;
+}
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    box-shadow: 0px 5px 2px hsl(154, 59%, 45%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.tac {
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+}
+.tac a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+
+@media (min-width: 900px) {
+    body {
+        background: url(images/bg-intro-desktop.png) center no-repeat;
+        background-size: cover;
+        background-color: hsl(0, 100%, 74%);
+    }
+     main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 50px ;
+     }
+     .hero-text {
+        text-align: left;
+     }
+     .hero-text h1 {
+        font-size: 2.5rem;
+     }
+     .free-trial {
+        margin: 0;
+     }
+}
+@media (min-width: 1200px) {
+    main {
+        padding: 50px 120px;
+        gap: 100px;
+    }
+}
